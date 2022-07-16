@@ -116,6 +116,11 @@ input:not(:placeholder-shown) + label {
 input:focus + label {
    top: 6px;
 }
+.btn-container {
+   display: flex;
+   align-items: center;
+   overflow: hidden;
+}
 button {
    padding: 1rem;
    font-size: 1.5rem;
@@ -123,9 +128,23 @@ button {
    background: var(--blue);
    border: none;
    border-radius: 10px;
+   z-index: 1;
 }
 button:hover {
    background: #3196da;
+}
+.warning {
+   max-height: 0;
+   overflow: hidden;
+   color: var(--red);
+   font-size: 1.5rem;
+   margin: 0 0 0 1.5rem;
+   transform: translateX(-120%);
+   transition: all 0.5s ease;
+}
+.warning.active {
+   max-height: 100px;
+   transform: translateX(0%);
 }
 .content__question {
    font-size: 1.3rem;
