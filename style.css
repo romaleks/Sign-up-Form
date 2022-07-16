@@ -23,6 +23,7 @@ main {
 .image {
    background: url('img/background.jpg') center / cover;
    flex: 0 0 40%;
+   position: relative;
 }
 .image__header {
    background: rgba(0, 0, 0, 0.4);
@@ -32,13 +33,20 @@ main {
    align-items: center;
    margin: 8em 0 0 0;
 }
-.image__icon {
-
-}
 .image__title {
    font-size: 4rem;
    color: #F9F2ED;
    margin: 0 0 0 0.8em;
+}
+.image__autor {
+   color: var(--white);
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: 5px;
+}
+.image__autor a {
+   color: var(--white);
 }
 .content {
    padding: 5em 0 0 3em;
@@ -48,8 +56,6 @@ main {
    max-width: 60ch;
    margin: 0 0 4rem 0;
 }
-.form {
-}
 .form__title {
    font-size: 2rem;
    margin: 0 0 1rem 0;
@@ -57,9 +63,6 @@ main {
 .form__body {
    display: flex;
    gap: 7em;
-}
-.form__column {
-
 }
 .form__input {
    position: relative;
