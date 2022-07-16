@@ -49,7 +49,7 @@ main {
    color: var(--white);
 }
 .content {
-   padding: 5em 0 0 3em;
+   padding: 8em 0 0 3em;
 }
 .content__text {
    font-size: 1.4rem;
@@ -92,6 +92,10 @@ input:not(:placeholder-shown) {
    border-bottom: 3px solid var(--green);
 }
 input:not(:placeholder-shown):invalid {
+   outline: none;
+   border-bottom: 3px solid var(--red);
+}
+.invalid {
    outline: none;
    border-bottom: 3px solid var(--red);
 }
